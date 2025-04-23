@@ -122,7 +122,7 @@ tornado_lsystem_gif(axiom, rules, iterations=11, angle=20, length=1.2, output_fi
 
 ![tornado_build.gif](results/tornado_build.gif)
 
-rozšíření a úprava (axiom FF zůstal stejný, jen iterace = 100)
+rozšíření a úprava (axiom F zůstal stejný)
 ![tornado.gif](results/tornado.gif)
 
 ```python
