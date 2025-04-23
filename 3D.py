@@ -54,4 +54,4 @@ rules = {
     "F": "FF"
 }
 axiom = "F"
-lsystem(axiom, rules, iterations=11, angle=20, length=1.2, output_file="tornado_build.gif")
+lsystem(axiom, rules, iterations=11, angle=20, length=1.2, output_file="results/tornado_build.gif")

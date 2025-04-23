@@ -8,7 +8,7 @@ def lsystem(axiom, rules, iterations, angle, length, output_file="lsystem.gif"):
         for i in range(iterations):
             axiom = ''.join(rules.get(symbol, symbol) for symbol in axiom)
             words.append(axiom)
-            print(f"Iteration {i + 1}: {axiom}")  # Vypíše slovo pro každou iteraci
+            print(f"Iteration {i + 1}: {axiom}")
         return words
 
     def draw_frame(word, angle, length, ax):
@@ -58,10 +58,9 @@ lsystem(
     iterations=5,
     angle=90,
     length=5,
-    output_file="hilbert_curve.gif"
+    output_file="results/hilbert_curve.gif"
 )
 
-# Example 2: Fractal Plant (Prusinkiewicz)
 plant_rules = {
     "X": "F-[[X]+X]+F[+FX]-X",
     "F": "FF"
@@ -73,9 +72,9 @@ lsystem(
     iterations=6,
     angle=25,
     length=5,
-    output_file="fractal_plant.gif"
+    output_file="results/fractal_plant.gif"
 )
-# Example: Dragon Curve
+
 dragon_rules = {
     "X": "X+YF+",
     "Y": "-FX-Y"
@@ -91,7 +90,7 @@ lsystem(
     iterations = iterations,
     angle = angle,
     length = length,
-    output_file="dragon_curve.gif")
+    output_file="results/dragon_curve.gif")
 
 rules = {
     "F": "FF-[-F+F+F]+[+F-F-F]"
@@ -101,4 +100,4 @@ iterations = 5
 angle = 25
 length = 5
 
-lsystem(axiom, rules, iterations, angle, length, output_file="new.gif")
+lsystem(axiom, rules, iterations, angle, length, output_file="results/new.gif")
